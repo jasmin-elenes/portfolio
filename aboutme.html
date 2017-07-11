@@ -8,8 +8,44 @@
           border: 5px solid black;
           margin: 0;
       }
-    
-    
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+      
   </style>
   </head>
    
@@ -21,14 +57,13 @@
     <h3 style="text-align:center;"> LIKES DISLIKES AND MORE </h3>
     
     
-    <div style="width: 40%; padding: 12px; display: inline-block; float:left;">
-      <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SmithsPromoPhoto_TQID_1985.jpg" width="250" height="150">
-        <p>I like music sleeping and cats</p>
-    </div>
-    <div style="width: 40%; padding: 10px; display: inline-block; float:right;">
-       <img src="https://s-media-cache-ak0.pinimg.com/originals/19/05/af/1905af695a5e7e4c37ff11bda78f3cd9.jpg" width="150" height"400">
-        <p> I dont like sports donald and cheese</p>
-    </div>
+<div class="container">
+  <img src="<div class="container">
+  <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SmithsPromoPhoto_TQID_1985.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
     
     <br><br><br><br>
     <h4 style="padding-top:300px;" align = CENTER> FAV PAGES </h4>
